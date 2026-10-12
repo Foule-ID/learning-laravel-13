@@ -14,10 +14,8 @@
     <x-admin.sidebar />
 
     <main class="p-4 md:ml-64 min-h-screen pt-20">
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-4">
-        {{ $slot }}
-      </div>
-    </main>
+    {{ $slot }}
+</main>
   </div>
 </body>
 </html>

@@ -36,6 +36,11 @@
                         <path d="M10 2a8 8 0 100 16 8 8 0 000-16z"/>
                     </svg>' />
 
+                <x-admin.menu-item href="/admin/student" label="Student"
+                    icon='
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M10 2a3 3 0 100 6 3 3 0 000-6zm0 8c-3.33 0-6 1.34-6 3v1h12v-1c0-1.66-2.67-3-6-3z"/>
+                    </svg>' />
             </ul>
 
         </div>
