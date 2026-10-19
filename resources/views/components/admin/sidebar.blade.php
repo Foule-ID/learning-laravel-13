@@ -41,6 +41,12 @@
                     <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
                     <path d="M10 2a3 3 0 100 6 3 3 0 000-6zm0 8c-3.33 0-6 1.34-6 3v1h12v-1c0-1.66-2.67-3-6-3z"/>
                     </svg>' />
+
+                <!-- Contoh penambahan menu baru -->
+                <a href="/admin/classroom"
+                    class="block py-2 px-4 text-gray-300 hover:bg-gray-700 hover:text-white rounded">
+                    Classroom
+                </a>
             </ul>
 
         </div>

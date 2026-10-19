@@ -27,15 +27,15 @@
                         </td>
 
                         <td class="px-6 py-4">
-                            {{ $student['nis'] }}
+                            {{ $student->nis }}
                         </td>
 
                         <td class="px-6 py-4">
-                            {{ $student['name'] }}
+                            {{ $student->name }}
                         </td>
 
                         <td class="px-6 py-4">
-                            {{ $student['class'] }}
+                            {{ $student->classroom }}
                         </td>
 
                     </tr>
