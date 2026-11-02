@@ -47,6 +47,17 @@
                     class="block py-2 px-4 text-gray-300 hover:bg-gray-700 hover:text-white rounded">
                     Classroom
                 </a>
+                <!-- Link Menu Teacher -->
+                <a href="/admin/teacher"
+                    class="flex items-center p-2 text-gray-300 hover:bg-gray-700 hover:text-white rounded-lg">
+                    <span class="ms-3">Teachers</span>
+                </a>
+
+                <!-- Link Menu Subject -->
+                <a href="/admin/subject"
+                    class="flex items-center p-2 text-gray-300 hover:bg-gray-700 hover:text-white rounded-lg">
+                    <span class="ms-3">Subjects</span>
+                </a>
             </ul>
 
         </div>

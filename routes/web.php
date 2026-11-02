@@ -5,6 +5,8 @@ use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\StudentController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ClassroomController;
+use App\Http\Controllers\TeacherController;
+use App\Http\Controllers\SubjectController;
 
 Route::get('/', function () {
     return view('layout');
@@ -17,3 +19,7 @@ Route::get('/admin/about', [AboutController::class, 'index']);
 Route::get('/admin/student', [StudentController::class, 'index']);
 
 Route::get('/admin/classroom', [ClassroomController::class, 'index']);
+
+Route::get('/admin/teacher', [TeacherController::class, 'index']);
+
+Route::get('/admin/subject', [SubjectController::class, 'index']);
