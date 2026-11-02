@@ -20,25 +20,25 @@
 
                 <tbody>
                     @foreach ($students as $index => $student)
-                    <tr class="border-b border-gray-700 hover:bg-gray-800">
+                        <tr class="border-b border-gray-700 hover:bg-gray-800">
 
-                        <td class="px-6 py-4">
-                            {{ $index + 1 }}
-                        </td>
+                            <td class="px-6 py-4">
+                                {{ $index + 1 }}
+                            </td>
 
-                        <td class="px-6 py-4">
-                            {{ $student->nis }}
-                        </td>
+                            <td class="px-6 py-4">
+                                {{ $student->nis }}
+                            </td>
 
-                        <td class="px-6 py-4">
-                            {{ $student->name }}
-                        </td>
+                            <td class="px-6 py-4">
+                                {{ $student->name }}
+                            </td>
 
-                        <td class="px-6 py-4">
-                            {{ $student->classroom }}
-                        </td>
+                            <td class="px-6 py-4">
+                                {{ $student->classroom->name }}
+                            </td>
 
-                    </tr>
+                        </tr>
                     @endforeach
                 </tbody>
 

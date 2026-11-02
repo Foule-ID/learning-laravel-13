@@ -10,6 +10,7 @@ use Illuminate\Database\Seeder;
 use App\Models\Subject;
 use App\Models\Teacher;
 
+
 class DatabaseSeeder extends Seeder
 {
     use WithoutModelEvents;
@@ -21,11 +22,15 @@ class DatabaseSeeder extends Seeder
         User::factory()->create([
         ]);
 
-        Classroom::factory(10)->create();
+        // Classroom::factory(10)->create();
 
-        Student::factory(20)->create();
+        // Student::factory(20)->create();
 
-        Subject::factory(16)->create();
+        Classroom::factory(10)
+            ->hasStudents(5)
+            ->create();
+
+        // Subject::factory(16)->create();
         Teacher::factory(16)->create();
     }
 }

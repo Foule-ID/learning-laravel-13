@@ -20,24 +20,25 @@ class TeacherFactory extends Factory
         return [
             'name' => fake()->name(),
             'niy' => fake()->numerify('##########'),
-            'subjects' => fake()->randomElement([
-                'Pendidikan Agama dan Budi Pekerti',
-                'Pendidikan Pancasila',
-                'Bahasa Indonesia',
-                'Pendidikan Jasmani Olahraga dan Kesehatan',
-                'Sejarah',
-                'Bahasa Jawa',
-                'Baca Tulis Al-Qur\'an',
-                'Matematika',
-                'Bahasa Inggris',
-                'Projek Kreatif dan Kewirausahaan',
-                'Bahasa Jepang',
-                'Internet of Things (IoT)',
-                'Game Development',
-                'Mobile Development',
-                'Web Development',
-                'Informatika'
-            ]),
+            // 'subjects' => fake()->randomElement([
+            //     'Pendidikan Agama dan Budi Pekerti',
+            //     'Pendidikan Pancasila',
+            //     'Bahasa Indonesia',
+            //     'Pendidikan Jasmani Olahraga dan Kesehatan',
+            //     'Sejarah',
+            //     'Bahasa Jawa',
+            //     'Baca Tulis Al-Qur\'an',
+            //     'Matematika',
+            //     'Bahasa Inggris',
+            //     'Projek Kreatif dan Kewirausahaan',
+            //     'Bahasa Jepang',
+            //     'Internet of Things (IoT)',
+            //     'Game Development',
+            //     'Mobile Development',
+            //     'Web Development',
+            //     'Informatika'
+            // ]),
+            'subject_id' => \App\Models\Subject::factory(),
             'start_date' => fake()->date(),
         ];
     }

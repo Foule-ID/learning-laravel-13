@@ -21,29 +21,29 @@
 
                 <tbody>
                     @foreach ($teachers as $index => $teacher)
-                    <tr class="border-b border-gray-700 hover:bg-gray-800">
+                        <tr class="border-b border-gray-700 hover:bg-gray-800">
 
-                        <td class="px-6 py-4">
-                            {{ $index + 1 }}
-                        </td>
+                            <td class="px-6 py-4">
+                                {{ $index + 1 }}
+                            </td>
 
-                        <td class="px-6 py-4">
-                            {{ $teacher->niy }}
-                        </td>
+                            <td class="px-6 py-4">
+                                {{ $teacher->niy }}
+                            </td>
 
-                        <td class="px-6 py-4">
-                            {{ $teacher->name }}
-                        </td>
+                            <td class="px-6 py-4">
+                                {{ $teacher->name }}
+                            </td>
 
-                        <td class="px-6 py-4">
-                            {{ $teacher->subjects }}
-                        </td>
+                            <td class="px-6 py-4">
+                                {{ $teacher->subject->name }}
+                            </td>
 
-                        <td class="px-6 py-4">
-                            {{ $teacher->start_date }}
-                        </td>
+                            <td class="px-6 py-4">
+                                {{ $teacher->start_date }}
+                            </td>
 
-                    </tr>
+                        </tr>
                     @endforeach
                 </tbody>
 

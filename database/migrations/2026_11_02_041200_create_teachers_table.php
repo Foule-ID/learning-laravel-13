@@ -15,7 +15,8 @@ return new class extends Migration
         $table->id();
         $table->string('name');
         $table->string('niy', 10);
-        $table->string('subjects'); 
+        // $table->string('subjects');
+        $table->foreignId('subject_id')->constrained()->unique();
         $table->date('start_date');
         $table->timestamps();
     });

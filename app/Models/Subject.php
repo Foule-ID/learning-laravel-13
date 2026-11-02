@@ -9,4 +9,9 @@ class Subject extends Model
 {
     /** @use HasFactory<\Database\Factories\SubjectFactory> */
     use HasFactory;
+
+    public function teacher()
+    {
+        return $this->hasOne(Teacher::class);
+    }
 }

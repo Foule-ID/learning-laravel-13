@@ -15,10 +15,11 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->integer('nis')->unique();
-            $table->string('classroom');
+            $table->foreignId('classroom_id')->constrained(
+                table: 'classrooms',
+                indexName: 'students_classroom_id'
+            );
             $table->text('address');
-
-
             $table->timestamps();
         });
     }
