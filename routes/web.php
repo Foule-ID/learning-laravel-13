@@ -23,3 +23,9 @@ Route::get('/admin/classroom', [ClassroomController::class, 'index']);
 Route::get('/admin/teacher', [TeacherController::class, 'index']);
 
 Route::get('/admin/subject', [SubjectController::class, 'index']);
+
+Route::post('/admin/student', [\App\Http\Controllers\StudentController::class, 'store']);
+
+Route::put('/admin/student/{id}', [\App\Http\Controllers\StudentController::class, 'update']);
+
+Route::delete('/admin/student/{id}', [\App\Http\Controllers\StudentController::class, 'destroy']);
